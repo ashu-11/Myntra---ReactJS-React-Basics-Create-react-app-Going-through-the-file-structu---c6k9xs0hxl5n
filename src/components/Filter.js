@@ -2,7 +2,7 @@ import React from "react";
 
 function Filter() {
   return (
-    <div className="filetr-holder">
+    <div className="filter-holder" style={{width:"100%"}}>
       <section>
         <h5>Gender</h5>
         <div>
@@ -19,10 +19,10 @@ function Filter() {
         <input type="checkbox" id="color" name="color" value="white" />
         <label for="color"> White</label>
       </section>
-      <section>
+      <section style={{width:"100%", whiteSpace:"nowrap"}}>
         <h5> Categories</h5>
         <input type="checkbox" id="folded" name="folded" />
-        <label for="folded">Folded sleeve Shirts</label>
+        <label for="folded" style={{width:"100%"}}>Folded sleeve Shirts</label>
       </section>
     </div>
   );
