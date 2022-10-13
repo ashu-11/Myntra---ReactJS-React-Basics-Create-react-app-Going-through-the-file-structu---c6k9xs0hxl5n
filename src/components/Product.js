@@ -17,7 +17,14 @@ function Product() {
         gap: "2rem",
       }}
     >
-      {showModal ? <Modal productImages={phtosGallery} /> : null}
+      {showModal ? (
+        <Modal
+          productImages={phtosGallery}
+          onClose={()=>{
+            setShowModal(false);
+          }}
+        />
+      ) : null}
       {filetredProducts.map((product) => {
         return (
           <div className="indiv-tile-holder" style={{ marginRight: 20 }}>
